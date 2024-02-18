@@ -38,6 +38,8 @@ Route::get('about', [CarRentalController::class, 'about'])->name('about');
 
 
 
+
+
 Route::get('blog', [CarRentalController::class, 'blog'])->name('blog');
 
 
