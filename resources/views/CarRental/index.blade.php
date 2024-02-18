@@ -1,0 +1,1 @@
+@extends('CarRental.layout.home')
