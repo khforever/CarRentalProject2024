@@ -29,8 +29,6 @@ use App\Http\Controllers\Auth\RegisterController;
     { 
 
 
-
-
 ///////////Car
 
 
