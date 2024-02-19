@@ -23,9 +23,9 @@
                 @if (is_array($element))
                     @foreach ($element as $page => $url)
                         @if ($page == $paginator->currentPage())
-                            <li class="active circle-pagination" aria-current="page"><span>{{ $page }}</span></li>
+                            <li class="active" aria-current="page"><span>{{ $page }}</span></li>
                         @else
-                            <li><a href="{{ $url }}" class="circle-pagination">{{ $page }}</a></li>
+                            <li><a href="{{ $url }}">{{ $page }}</a></li>
                         @endif
                     @endforeach
                 @endif
@@ -33,7 +33,9 @@
 
             {{-- Next Page Link --}}
             @if ($paginator->hasMorePages())
-                <li><a href="{{ $paginator->nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')">&rsaquo;</a></li>
+                <li>
+                    <a href="{{ $paginator->nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')">&rsaquo;</a>
+                </li>
             @else
                 <li class="disabled" aria-disabled="true" aria-label="@lang('pagination.next')">
                     <span aria-hidden="true">&rsaquo;</span>

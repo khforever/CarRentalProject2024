@@ -104,7 +104,7 @@ class CarController extends Controller
          'category_id'=>'required',
         
        ],$messages);
-
+ 
 
 
      $data['active']=isset($request->active);

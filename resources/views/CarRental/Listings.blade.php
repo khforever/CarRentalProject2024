@@ -6,6 +6,8 @@
 
  
 
+<link rel="stylesheet" href="{{asset('assets/css/pagination.css')}}">
+
 
 <div class="site-section bg-light">
       <div class="container">
