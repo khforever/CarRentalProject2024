@@ -18,9 +18,6 @@ use App\Http\Controllers\CarRentalController;
 
 
 
-
-
-
 Route::get('/', [CarRentalController::class, 'index'])->name('index');
 
 
